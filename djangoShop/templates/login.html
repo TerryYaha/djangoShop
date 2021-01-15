@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/reset.css">
+    <link rel="stylesheet" href="/static/css/login.css">
+    <link rel="stylesheet" href="/static/css/font_2286611_l5okx09qcz/iconfont.css">
+    <script src="/static/js/login.js"></script>
+    <title>壹库商城</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="content">
+                <span class="hiuser">您好，陶云亮，五金电子网站</span>
+
+                <ul class="pilot">
+                    <li><span class="a"><span>合作</span></span><span>|</span>
+                    </li>
+                    <li><span class="a"><span>帮助</span></span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="orderTitle">
+            <div class="content">
+                <div class="logopart">
+                    <img src="/static/img/shoplogo1.jpg" alt="">
+                </div>
+                <ul class="searchArea">
+                    <li class="search">
+
+                    </li>
+                    <li class="cart">
+                        <div>
+                            <span>我的购物车</span>
+                        </div>
+                        <span class="icon iconfont icon-gouwuche1"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="navItem">
+            <div class="content">
+                <ul class="navTitle">
+                    <li><span onclick="toIndex()">首页</span></li>
+                    <li><span>产品中心</span></li>
+                    <li ><span>数码类</span></li>
+                    <li><span>五金类</span></li>
+                    <li><span>护肤品类</span></li>
+                </ul>
+
+            </div> 
+            <!-- <div class="container"> -->
+            <div class="banner " id="lists" >
+                    <img src="/static/img/banner2.jpg" alt="" style="width:100%;">
+                    <div class="login">
+                        <div class="loginWay">
+                            <span>扫码登陆</span>
+                            <span class="tq">账号登陆</span>
+                        </div>
+    
+                        <ul class="inputText">
+                            <li>
+                                <input type="text" id="uName" placeholder="用户名/邮箱/手机号">
+                            </li>
+                            <li>
+                                <input type="password" id="uPwd" placeholder="密码">
+                            </li>
+                            <li class="num">
+                                <input class="yanzheng" id="uvailCode" type="text" placeholder="验证码">
+                                <input readonly id="vailCode" class="edit3" onclick="initCode()">
+                            </li>
+                            <li>
+                                <input  class="btn" type="button" value="立即登录" onclick="doLogin()">
+                            </li>
+                        </ul>
+    
+                        <div class="loginWarn">
+                            <span style="cursor: pointer" onclick="registPage()">注册壹库商城账号 </span><span>|</span>
+                            <a href="#" class="isPwd"> 忘记密码</a>
+                        </div>
+    
+                        <div class="loginTip">
+                            <div class="xian"></div>
+                            <span> 1、 壹库商城全天为您服务。</span>
+                            <span> 2、 服务器卡顿时，请联系官方联系电话：8554-1011。</span>
+                        </div>
+    
+                    </div>
+            </div>
+
+        <!-- </div> -->
+
+
+        <div class="foot">
+            <div class="content">
+                <span>copyright c 2020蜀ICP备20000号|壹库有限公司.</span>
+                <span>侵犯版权，违者必究</span>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="/static/js/login.js"></script>
+<script src="/static/js/jquery-3.3.1.min.js"></script>
+</html>

@@ -1,0 +1,220 @@
+.wrap{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.header{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(137, 137, 138);
+
+}
+.header >.content{
+    width: 1080px;
+    margin: 0 auto;
+    line-height: 30px;
+
+    color: #fff;
+    font-size: 13px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.header >.content>.pilot{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.header >.content>.pilot li>.a span{
+    margin: 0 5px;
+}
+.header >.content>.pilot li>span:nth-child(2){
+    font-size: 13px;
+    margin: 0 20px;
+}
+.orderTitle{
+    width: 100%;
+    height: 100px;
+}
+.orderTitle>.content{
+    width: 1080px;
+    margin: 0 auto;
+    line-height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.orderTitle>.content>.logopart img{
+    width: 160px;
+}
+/* .orderTitle>.logopart{
+    margin-left: 100px;
+} */
+.orderTitle>.content >.searchArea{
+    width: 380px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 30px;
+    margin-top: 14px;
+}
+.orderTitle>.content >.searchArea>.cart{
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.orderTitle>.content >.searchArea>.search>input{
+    width: 150px;
+    height: 36px;
+    line-height: 35px;
+    border: 1px solid rgb(105, 105, 214);
+}
+.orderTitle>.content >.searchArea>.search{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.orderTitle>.content >.searchArea>.cart>div{
+    width: 100px;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    background-color: rgb(49, 49, 49);
+}
+.orderTitle>.content >.searchArea .icon{
+    display: block;
+    color: #fff;
+    background-color: rgb(81, 81, 252);
+    width: 50px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+}
+/* 内容区轮播图 */
+.navItem{
+    width: 100%;
+    /* border: 1px solid red; */
+}
+.navItem>.content{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(77, 77, 77);
+}
+.navItem>.content> .navTitle{
+    width: 1080px;
+    margin: 0 auto;
+
+    line-height: 40px;
+    /* padding-left: 130px; */
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: right;
+}
+.navItem>.content>.navTitle li{
+    width: 90px;
+    text-align: center;
+    margin: 0 20px;
+    color: #fff;
+}
+.frame{
+    position: relative;
+    width: 600px;
+    height: 500px;
+    border: rgb(153, 153, 153) solid 2px;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: rgb(247, 245, 245);
+}
+.frame>.chatTitle>.top{
+    width: 100%;
+    height: 20px;
+    border-radius: 10px 10px 0 0;
+    background-color: rgb(202, 200, 200);
+}
+.frame>.chatTitle{
+    line-height: 55px;
+    height: 70px;
+    border-bottom: 1px solid rgb(212, 212, 212);
+}
+.frame>.chatTitle .top+span{
+    margin-left: 15px;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 3px;
+    background-color: rgb(74, 74, 255);
+}
+.frame>.icon>.left li{
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 13px;
+}
+.frame>.icon{
+    width: 100%;
+    height: 26px;
+    position: relative;
+    display: inline-block;
+    background-color: rgb(236, 236, 236);
+}
+.frame>.icon ul+span{
+    position: absolute;
+    width: 100px;
+    top: 3px;
+    right: 0;
+    font-size: 10px;
+    color: rgb(113, 113, 255);
+}
+.frame .send{
+    position: absolute;
+    border: none;
+    width: 75px;
+    height: 30px;
+    border-radius: 3px;
+    color: #fff;
+    background-color: rgb(218, 49, 83);
+    bottom: 5px;
+    right: 15px;
+}
+
+.foot{
+    /* position: fixed;
+    bottom: 0; */
+    width: 100%;
+    height: 70px;
+    margin-top: 50px;
+    background-color: rgb(53, 53, 53);
+}
+.foot>.content{
+    width: 800px;
+    height: 40px;
+    font-size: 12px;
+    margin: 0 auto;
+    color: #fff;
+    padding-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}

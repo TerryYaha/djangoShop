@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/reset.css">
+    <link rel="stylesheet" href="/static/css/cart.css">
+    <link rel="stylesheet" href="/static/css/font_2286611_l5okx09qcz/iconfont.css">
+    <title>我的购物车</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <span class="hiuser">您好，{{user.uname}}，壹库商城</span>
+
+             <ul class="pilot">
+                <li><span class="iconfont icon-shouye1" onclick="toIndex()">首页</span><span>|</span></li>
+                <li><span class="iconfont icon-gouwuche" href="#">购物车</span><span>|</span></li>
+                <li><span class="iconfont icon-tuichu1" onclick="doExit()">退出</span></li>
+            </ul>
+        </div>
+        <div class="orderTitle">
+            <div class="logopart">
+                <img src="/static/img/shoplogo1.jpg" alt="" style="width: 120px;">
+                <div class="line"></div>
+                <span class="vipor">会员中心</span>
+            </div>
+            <ul class="orderpilot">
+                <li onclick="toService()"><span class="iconfont icon-shouye"></span><span>会员中心</span></li>
+                <li onclick="myInfo()"><span class="iconfont icon-huiyuan"></span><span>会员信息</span></li>
+                <li><span class="iconfont icon-youhuiquan"></span><span>我的优惠券</span></li>
+                <li><span class="iconfont icon-shouhuodizhi"></span><span>收获地址</span></li>
+                <li><span class="iconfont icon-shoucang"></span><span>我的收藏</span></li>
+                <li onclick="toOrder()"><span class="iconfont icon-dingdan"></span><span>我的订单</span></li>
+            </ul>
+        </div>
+
+        <div class="itemInfo">
+            <div class="content">
+                <div class="itemTitle">
+                    <span>购物车</span>
+                </div>
+
+                <table id="dataTable" cellpadding=5 cellspacing=3 >
+                    <tr align="center" class="bottom">
+                        <th width="5%">
+                            <input type="checkbox" class="ckAll" onclick="checkAll(this)">
+                        </th>
+                        <th width="28%" align="left">
+                            <span>类型</span>
+                        </th>
+                        <th width="8%">
+                            <span>规格</span>
+                        </th>
+                        <th width="8%">
+                            <span>单价</span>
+                        </th>
+                        <th width="15%">
+                            <span>数量</span>
+                        </th>
+                        <th width="13%">
+                            <span>小计（折后）</span>
+                        </th>
+                        <th width="16%">
+                            <span>操作</span>
+                        </th>
+                    </tr>
+                    <!-- <tr>
+                        <td rowspan="3"><div class="line"></div></td>
+                    </tr> -->
+                
+                    <tr align="center" class="bottom itemData">
+                        <td>
+                            <input type="checkbox" class="ckAll">
+                        </td>
+                        <td class="item" align="left">
+                            <img src="/static/img/fsl.jpg" alt="">
+                            <div class="text">
+                                <span class="name">凡士林(Vaseline)润唇膏</span><br/>
+                                <span class="remarks">{颜色：QY7654}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <span>默认</span>
+                        </td>
+                        <td class="price">
+                            <span>￥ 27.2</span><br/>
+                            <span>￥ 25</span>
+                        </td>
+                        <td>
+                            　　　　<div class="btn-numbox">
+
+                                <ul class="count">
+                                    <li><span id="num-jian" class="num-jian">-</span></li>
+                                    <li><input type="text" class="input-num" id="input-num" value="0" /></li>
+                                    <li><span id="num-jia" class="num-jia">+</span></li>
+                                </ul>
+                               
+
+                            　　　  </div>
+                            <!-- <input type="button" value="-">
+                            <span class="num">2</span>
+                            <input type="button" value="+"> -->
+                        </td>
+                        <td>
+                            <span>￥ 16.8</span>
+                        </td>
+                        <td>
+                            <span>删除</span>
+                            <span>|</span>
+                            <span>移入收藏夹</span>
+                        </td>
+                    </tr>
+                </table>
+
+               <ul class="tobuy">
+                   <li class="ab">
+                       <span>删除</span>
+                   </li>
+                   <li class="ab">
+                       <span>清除失效宝贝</span>
+                   </li>
+                   <li class="ab">
+                       <span>移入收藏夹</span>
+                   </li>
+                   <li class="tip" id="tip">
+                       <span>已选商品<span class="num" id="onum">0</span>件&nbsp;(不含运费)：</span>
+                       <span class="num" id="sprice">￥&nbsp;&nbsp;0.00</span>
+                   </li>
+                   <li>
+                       <input type="button" class="buy" value="结算" onclick="payBuyCar()">
+                   </li>
+               </ul>
+            </div>
+        </div>
+        <div class="foot">
+            <div class="content">
+                <span>copyright c 2020蜀ICP备20000号|壹库有限公司.</span>
+                <span>侵犯版权，违者必究</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="/static/js/jquery-3.3.1.min.js"></script>
+<script src="/static/js/cart.js"></script>
+</html>

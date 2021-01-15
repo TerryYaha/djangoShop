@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/reset.css">
+    <link rel="stylesheet" href="/static/css/detail.css">
+    <link rel="stylesheet" href="/static/css/font_2286611_l5okx09qcz/iconfont.css">
+    <title>商品详情页</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="content">
+                {% if user == None %}
+                <span class="hiuser">您好，欢迎来到壹库商城</span>
+
+                <ul class="pilot">
+                    <li><span class="a"></span><span onclick="registPage()">注册</span><span>|</span></li>
+                    <li><span class="a"></span><span onclick="doLogin()">点击登录</span></li>
+                </ul>
+                {% else %}
+                <span class="hiuser">您好，{{user.uname}}，这里是壹库商城</span>
+
+                <ul class="pilot">
+                    <li><span class="a"><span
+                                class="iconfont icon-huiyuan"></span><span onclick="myInfo()">会员中心</span></span><span>|</span>
+                    </li>
+                    <li><span class="a"><span class="iconfont icon-tuichu1"></span><span onclick="doExit()">退出</span></span></li>
+                </ul>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="orderTitle">
+            <div class="content">
+                <div class="logopart">
+                    <img src="/static/img/shoplogo1.jpg" alt="">
+                </div>
+                <ul class="searchArea">
+                    <li class="search">
+
+                    </li>
+                    <li class="cart">
+                        <div>
+                            <span>我的购物车</span>
+                        </div>
+                        <span class="icon iconfont icon-gouwuche1" onclick='toCart("{{user}}")'></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="navItem">
+            <div class="content">
+                <ul class="navTitle">
+                    <li onclick="toIndex()"><span>首页</span></li>
+                    <li><span>产品中心</span></li>
+                    <li class="active"><span>数码类</span></li>
+                    <li><span>五金类</span></li>
+                    <li><span>护肤品类</span></li>
+                </ul>
+
+            </div>
+            <ul class="banner">
+                <li>
+                    <img src="/static/img/banner2.jpg" alt="">
+                </li>
+            </ul>
+
+        <div class="proDetail">
+            <div class="content">
+                <div class="item" id="itemInfo">
+{#                    <div class="proImg">#}
+{#                        <img src="/static/img/macbook1.jpg" alt="">#}
+{#                        <ul>#}
+{#                            <li class="active">#}
+{#                                <img src="/static/img/macb1.jpg" alt="">#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <img src="/static/img/macb2.jpg" alt="">#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <img src="/static/img/macb3.jpg" alt="">#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <img src="/static/img/macb4.jpg" alt="">#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <img src="/static/img/macb5.jpg" alt="">#}
+{#                            </li>#}
+{#                        </ul>#}
+{##}
+{#                    </div>#}
+
+{#                    <div class="proAct">#}
+{#                        <span>Apple MacBook Air 13.3 新款八核M1芯片</span> #}
+{#                        <ul class="proInfo">#}
+{#                            <li>#}
+{#                                <span>库存：100</span>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <span>销量：54</span>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <span>规格：</span><span class="default">默认</span>#}
+{#                            </li>#}
+{#                            <li class="num">#}
+{#                                <span>数量：</span>#}
+{#                                <input type="button" value="-" class="mlus">#}
+{#                                <input type="text" value="1" class="itemNum">#}
+{#                                <input type="button" value="+" class="plus">#}
+{#                            </li>#}
+{#                            <li class="price">#}
+{#                                <span>价格：</span>#}
+{#                                <span class="nowPrice">￥7999.00</span>#}
+{#                                <span>￥ 8020.00</span>#}
+{#                            </li>#}
+{#                        </ul>#}
+{#                        <div class="btn">#}
+{#                            <input type="button" value="立即购买">#}
+{#                            <input type="button" value="加入购物车">#}
+{#                        </div>#}
+ 
+{#                    </div>#}
+                </div>
+            </div>
+
+        </div>
+
+        <!-- <div class="middle">
+            <div class="content">
+                <span class="star">收藏  |  我的收藏夹</span>
+
+                <div class="middleTitle">
+
+                </div>
+            </div>
+        </div> -->
+
+        <div class="foot">
+            <div class="content">
+                <span>copyright c 2020蜀ICP备20000号|壹库有限公司.</span>
+                <span>侵犯版权，违者必究</span>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="/static/js/jquery-3.3.1.min.js"></script>
+<script src="/static/js/detail.js"></script>
+
+</html>

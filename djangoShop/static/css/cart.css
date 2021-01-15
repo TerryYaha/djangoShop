@@ -1,0 +1,250 @@
+.wrap{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.header{
+    width: 100%;
+    height: 30px;
+    color: #fff;
+    font-size: 13px;
+    background-color: rgb(101, 101, 233);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.header >.pilot{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+}
+.header >.hiuser{
+    margin-left: 50px;
+}
+.header >.pilot{
+    margin-right: 40px;
+}
+.header >.pilot li span{
+    font-size: 13px;
+    margin: 0 10px;
+}
+
+.orderTitle{
+    width: 100%;
+    height: 70px;
+    border-bottom: 2px solid rgb(62, 62, 255);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.orderTitle .logopart{
+    width: 240px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+.orderTitle .logopart>.line{
+    line-height: 60px;
+    height: 40px;
+    width: 1px;
+    background-color: rgb(204, 203, 199);
+}
+.orderTitle .logopart >.vipor{
+    color: rgb(133, 132, 131);
+    font-size: 20px;
+}
+.orderTitle >.orderpilot{
+    width: 620px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin-right: 60px;
+    margin-top: 14px;
+
+}
+.orderTitle >.orderpilot li span{
+    font-size: 15px;
+    color: rgb(66, 66, 65);
+    margin: 0 3px;
+}
+.orderTitle >.orderpilot .active{
+    color: rgb(117, 117, 248);
+}
+
+.itemInfo{
+    position: relative;
+    width: 100%;
+    padding-top: 20px;
+    background-color: rgb(230, 228, 228);
+}
+.itemInfo>.content{
+    position: relative;
+    width: 1080px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    /* padding-top: 20px; */
+    
+}
+.itemInfo>.content .itemTitle{
+    height: 30px;
+    padding: 20px;
+    border-bottom: 2px solid rgb(201, 201, 201);
+}
+.itemInfo>.content>#dataTable{
+    width: 1000px;
+    margin: 20px auto;
+
+}
+.itemInfo>.content>#dataTable .item>img{
+    width: 130px;
+}
+.itemInfo>.content>#dataTable .item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+.itemInfo>.content>#dataTable .item .text{
+
+    
+}
+
+.itemInfo>.content>#dataTable .item .text .name{
+    width: 160px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.itemInfo>.content>#dataTable .item .text .remarks{
+    position: relative;
+    font-size: 14px;
+    color: rgb(139, 139, 139);
+    top: 10px;
+}
+.itemInfo>.content>#dataTable>tr td{
+    border-bottom: 1px solid rgb(151, 150, 150);
+}
+.itemInfo>.content>#dataTable{
+    border-collapse:collapse;
+}
+
+.itemInfo>.content>#dataTable tr{
+    /* height: 1px;
+    width: 100%;
+    background-color: rgb(151, 150, 150); */
+    border-bottom: 1px solid #a1a1a1;
+}
+.btn-numbox .count{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+} 
+
+
+.count .num-jian,
+.input-num,
+.num-jia {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 18px;
+    color: #999;
+    cursor: pointer;
+    border: 1px solid #c9c9c9;
+}
+.count .input-num {
+    width: 58px;
+    height: 26px;
+    color: #333;
+    border-left: 0;
+    border-right: 0;
+}
+.itemInfo>.content>#dataTable .price span:nth-child(1){
+    font-size: 12px;
+    color: rgb(146, 146, 146);
+    text-decoration: line-through;
+}
+.itemInfo>.content>#dataTable .price span{
+    margin: 20px 0;
+}
+.tobuy{
+    position: absolute;
+    width: 600px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    /* padding-right: 0; */
+    right: 35px;
+    margin-top: 20px;
+
+}
+.tobuy .ab{
+    font-size: 12px;
+}
+.tobuy .tip{
+    color: rgb(107, 107, 107);
+    font-size: 12px;
+}
+.tobuy .tip .num{
+    font-size: 16px;
+    color: #ff6700;
+    font-weight: bold;
+}
+.tobuy .buy{
+    border: none;
+    width: 83px;
+    height: 36px;
+    color: #fff;
+    font-size: 15px;
+    font-family: "microsoft yahei";
+    background-color: #ff6700;
+}
+
+.foot{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(53, 53, 53);
+}
+.foot>.content{
+    width: 800px;
+    height: 40px;
+    font-size: 12px;
+    margin: 0 auto;
+    color: #fff;
+    padding-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* .btn-numbox {
+    overflow: hidden;
+    margin-top: 20px;
+} */
+

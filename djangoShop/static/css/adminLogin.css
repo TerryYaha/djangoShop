@@ -1,0 +1,135 @@
+/*
+   选择器是jQuery最核心的组成部分，可以使用选择器直接去改变页面元素的样式
+   1.元素名称选择器
+   2.id选择器
+   3.class选择器
+*/
+/*
+        表单选择器
+
+    1.常规选择器
+    2.表单选择器
+    ：input(input,textarea,select,button)元素
+    :text单行文本框
+    :password   密码框
+    :radio      单选框
+    :checkbox   多选框
+    :submit     提交按钮
+    :reset      重置按钮
+    :hidden     不可见字段
+    :image      图片按钮+
+    :buttom     普通按钮
+    :file       文件按钮
+ */
+/*
+        基础事件
+
+    js中的事件
+
+    click,dblclick
+    mousedown,mouseup,mousemove,mouseover,mouseout,change、select、submit、keydowm、
+    keyup、blur、focus、load、resize、scroll、error
+    1.绑定事件
+    2.简写事件
+    3.复合事件
+ */
+
+ *{
+    margin: 0;
+    padding:0;
+    text-decoration: none;
+    font-family: montserrat;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(120deg,#858585,#42389b);
+}
+.login-form{
+    width:360px;
+    background: #CCDDFF;
+    height: 480px;
+    padding: 80px 40px;
+    border-radius: 10px;
+    position: absolute;
+    top:50%;
+    left: 300px;
+    transform: translate(-50%,-50%);
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.txtb input{
+    font-size: 15px;
+    color: #333;
+    border:none;
+    width:100%;
+    outline: none;
+    background: none;
+    padding: 0 5px;
+    height: 35px;
+}
+.txtb{
+    border-bottom: 2px solid #adadad;
+    position: relative;
+    margin: 30px 0px;
+}
+.txtb span::before{
+    content: attr(data-placeholder);
+    position: absolute;
+    top:50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    z-index:-1;
+    transition: .5s;
+}
+
+.txtb span::after{
+    content: '';
+    position: absolute;
+    left: 5px;
+    top:100%;
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(120deg,#00DDDD,#CC00CC);
+    transition: .5s;
+}
+.focus + span::before{
+    top:-5px;
+
+}
+.focus + span::after{
+    width:100%;
+
+}
+
+.logbtn{
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: linear-gradient(120deg,	#b1b1b1,#6f87ac,#1f0ffc);
+    background-size: 200%;
+    color: #FFFFFF;
+    outline: none;
+    cursor:pointer;
+    transition: .5s;
+}
+
+.logbtn:hover{
+    background-position:right;
+}
+
+.bottom-text{
+    margin-top:50px;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+

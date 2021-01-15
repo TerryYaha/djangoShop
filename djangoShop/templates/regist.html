@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/reset.css">
+    <link rel="stylesheet" href="/static/css/regist.css">
+    <link rel="stylesheet" href="/static/css/font_2286611_l5okx09qcz/iconfont.css">
+    <title>壹库商城注册</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="content">
+                <span class="hiuser">您好，欢迎来到壹库商城</span>
+
+                <ul class="pilot">
+                    <li><span class="a"><span>合作</span></span><span>|</span>
+                    </li>
+                    <li><span class="a"><span>帮助</span></span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="orderTitle">
+            <div class="content">
+                <div class="logopart">
+                    <img src="/static/img/shoplogo1.jpg" alt="">
+                </div>
+                <ul class="searchArea">
+
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="navItem">
+            <div class="content">
+                <ul class="navTitle">
+                    <li onclick="indexPage()"><span>首页</span></li>
+                    <li><span>产品中心</span></li>
+                    <li ><span>数码类</span></li>
+                    <li><span>五金类</span></li>
+                    <li><span>护肤品类</span></li>
+                </ul>
+            </div> 
+            <!-- <div class="container"> -->
+                
+                <div class="frame">
+                    <div class="titleFrame">
+                        <div class="content">
+                            <span class="titleFont">壹库账户注册</span>
+                        </div>
+                    </div>
+                    <div class="contentFrame">
+                        <table class="regTable"
+                        cellpadding="5">
+                            <tr>
+                                <td class="firstId">
+                                    <div class="star">*</div>
+                                    <div class="titleContent" >用户名：</div>
+                                </td>
+                                <td class="secondId">
+                                    <input class="editContent" type="text" placeholder="用户设置成功后不可修改" id="uName"/>
+                                </td>
+                                <td class="thirdId">
+                                    <span class="tip">6-30位字母,数字或"_",字母开头</span>
+                                </td>
+                            </tr>
+        
+                            <tr>
+                                <td class="firstId">
+                                    <div class="star">*</div>
+                                    <div class="titleContent" >登陆密码：</div>
+                                </td>
+                                <td class="secondId">
+                                    <input id="loginPwd" class="editContent" type="password" placeholder="请输入您的密码" />
+                                </td>
+                                <td class="thirdId">
+                                    <span id="userpasswordError" class="tip" style="color: red;font-size: 12px" >6-16位数字</span>
+                                </td>
+                            </tr>
+        
+                            <tr>
+                                <td class="firstId">
+                                    <div class="star">*</div>
+                                    <div class="titleContent" >确认密码：</div>
+                                </td>
+                                <td class="secondId">
+                                    <input class="editContent" type="password" placeholder="再次确认您的密码" id="c_loginPwd"/>
+                                </td>
+                                <td class="thirdId">
+                                    <span class="tip"> </span>
+                                </td>
+                            </tr>
+        
+        
+                             <tr>
+                                <td class="firstId">
+                                    <div class="star">*</div>
+                                    <div class="titleContent">姓名：</div>
+                                </td>
+                                <td class="secondId">
+                                    <input class="editContent" type="text" placeholder="请输入姓名" id="userName"/>
+                                </td>
+                                <td class="thirdId">
+                                    <span class="tip "><a href="">姓名填写规则 </a><span> (用于身份验证，请正确填写)</span></span>
+                                </td>
+                            </tr>
+        
+                            <tr>
+                                <td class="firstId">
+                                    <div class="star">*</div>
+                                    <div class="titleContent" >邮箱：</div>
+                                </td>
+                                <td class="secongdId">
+                                    <input class="editContent" type="text" placeholder="请输入您的邮箱" id="uEmail"/>
+                                </td>
+                                <td class="thirdId">
+                                    <span class="tip"> </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="firstId">
+                                    <div class="star">*</div>
+                                    <div class="titleContent" >地址：</div>
+                                </td>
+                                <td class="secongdId">
+                                    <input class="editContent" type="text" placeholder="请输入您的地址（收货）" id="uAddress"/>
+                                </td>
+                                <td class="thirdId">
+                                    <span class="tip"> </span>
+                                </td>
+                            </tr>
+        
+                            <tr>
+                                <td class="firstId">
+                                    <div class="star">*</div>
+                                    <div class="titleContent" >手机号码：</div>
+                                </td>
+                                <td class="secondId">
+                                    <input class="editContent" type="text" placeholder="请输入您的手机号码" id="uPhone" oninput="value=value.replace(/[^\d]/g,'')"/>
+                                </td>
+                                <td class="thirdId">
+                                    <span class="tip"> 请填写正确的手机号，后面会给该手机号码发送验证码 </span>
+                                </td>
+                            </tr>
+    
+        
+                            <tr>
+                                <td class="firstId">
+                                </td>
+                                <td class="secondId" colspan="2">
+                                    <input type="checkbox" id="admitRule"/>
+                                    <span class="titleContent">我已阅读并同意</span>
+                                    <a href="#" class="tielu">《壹库商城用户协议条款》</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+        
+                    <div class="nextBtn">
+                        <input type="button" value="注册" id="subBtn" onclick="doButton()">
+                    </div>
+                </div>
+        <!-- </div> -->
+
+
+        <div class="foot">
+            <div class="content">
+                <span>copyright c 2020蜀ICP备20000号|壹库有限公司.</span>
+                <span>侵犯版权，违者必究</span>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/static/js/regist.js"></script>
+<script src="/static/js/jquery-3.3.1.min.js"></script>
+
+</html>

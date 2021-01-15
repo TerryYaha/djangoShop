@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/reset.css">
+    <link rel="stylesheet" href="/static/css/servicer.css">
+    <link rel="stylesheet" href="/static/css/font_2286611_l5okx09qcz/iconfont.css">
+    <link rel="stylesheet" href="/static/css/css2/iconfont.css">
+    <title>壹库商城客服平台</title>
+</head>
+
+<body>
+    <div class="wrap">
+
+        <div class="orderTitle">
+            <div class="content">
+                <div class="logopart">
+                    <img src="/static/img/shoplogo1.jpg" alt="">
+                </div>
+                <ul class="searchArea">
+                    			<div>
+				<input type="file" id="fileUpload">
+				<button onclick="doUpload()" style="width:60px;background-color: crimson;border: none;border-radius: 3px;color: #fff;">上传</button>
+			</div>
+                </ul>
+            </div>
+        </div>
+
+        <div class="navItem">
+            <div class="userList">
+                <span>用户列表(请选择)</span>
+
+                <ul id="users">
+
+                </ul>
+            </div>
+
+                <div class="frame">
+                    <div class="chatTitle">
+                        <div class="top">
+                        </div>
+                        <span>自营</span>&nbsp;&nbsp;
+                        <span>壹库商城旗舰店</span>
+                        <span  class="goIndex" style="cursor: default;font-size: 12px;color: gray" onclick="toIndex()">点击回到首页</span>
+                    </div>
+                    <textarea id="showPanel" class="chat_contener" readonly rows="15" cols="82" style="border: none;"></textarea>
+                    <div class="icon">
+                        <ul class="left">
+                            <li><span  class="iconfont icon-yuyin" style="font-size: 14px; line-height: 15px;"></span></li>
+                            <li><span  class="iconfont icon-tupian"></span></li>
+
+                        </ul>
+                        <span><a href="#">怎么发图片？</a></span>
+                    </div>
+                    <textarea id="inputPanel"  rows="8" cols="82" style="border: 1px solid rgb(233, 233, 233);"></textarea>
+                    <input type="button" id="search_button" value="发送" class="send" onclick="sendMsg() ">
+                </div>
+        <!-- </div> -->
+
+
+        <div class="foot">
+            <div class="content">
+                <span>copyright c 2020蜀ICP备20000号|壹库有限公司.</span>
+                <span>侵犯版权，违者必究</span>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+<script src="/static/js/jquery-3.3.1.min.js"></script>
+<script src="/static/js/servicer.js"></script>
+</html>

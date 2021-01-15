@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/reset.css">
+    <link rel="stylesheet" href="/static/css/myInfo.css">
+    <link rel="stylesheet" href="/static/css/font_2286611_l5okx09qcz/iconfont.css">
+    <title>会员信息</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <span class="hiuser">您好，{{ user.uname }}，壹库商城</span>
+
+            <ul class="pilot">
+                <li><span class="iconfont icon-shouye1" onclick="toIndex()">首页</span><span>|</span></li>
+                <li><span class="iconfont icon-gouwuche" onclick="toCart()">购物车</span><span>|</span></li>
+                <li><span class="iconfont icon-tuichu1" onclick="doExit()">退出</span></li>
+            </ul>
+        </div>
+        <div class="orderTitle">
+            <div class="logopart">
+                <img src="/static/img/shoplogo1.jpg" alt="" style="width: 120px;">
+                <div class="line"></div>
+                <span class="vipor">会员中心</span>
+            </div>
+            <ul class="orderpilot">
+                <li onclick="toService()"><span class="iconfont icon-shouye"></span><span>会员中心</span></li>
+                <li><span class="iconfont icon-huiyuan active"></span><span  class="active">会员信息</span></li>
+                <li><span class="iconfont icon-youhuiquan"></span><span>我的优惠券</span></li>
+                <li><span class="iconfont icon-shouhuodizhi"></span><span>收获地址</span></li>
+                <li><span class="iconfont icon-shoucang"></span><span>我的收藏</span></li>
+                <li onclick="toOrder()"><span class="iconfont icon-dingdan"></span><span>我的订单</span></li>
+            </ul>
+        </div>
+
+        <div class="nav">
+            <div class="content">
+                <div class="lfitem">
+                    <ul>
+                        <li>
+                            <span>会员中心</span>
+                        </li>
+                        <li class="active">
+                            <span class="iconfont icon-gerenxinxi"></span>&nbsp;&nbsp;
+                            <span>个人信息</span>
+                        </li>
+                        <li>
+                            <span class="iconfont icon-mima"></span>&nbsp;&nbsp;
+                            <span>修改密码</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="riitem">
+                    <div class="baseInfo">
+                        <span>基本信息</span>
+                    </div>
+                    <div class="myInfo">
+                        <ul>
+                            <li class="ins">
+                                <span class="star">*</span>
+                                <span>昵称：</span>
+                                <input type="text" value="您的昵称" id="uname">
+                            </li>
+                            <li class="ins">
+                                <span>邮箱：</span>
+                                <input type="text" id="uemail">
+                            </li>
+                            <li class="ins">
+                                <span class="star">*</span>
+                                <span>手机号码：</span>
+                                <input type="text" value="您的手机号码" id="utel" oninput="value=value.replace(/[^\d]/g,'')">
+                            </li>
+                            <li class="ins">
+                                <span>真实姓名：</span>
+                                <input type="text" id="userName">
+                            </li>
+                            <li class="ins">
+                                <span>个人地址（收货）：</span>
+                                <input type="text" id="uaddress">
+                            </li>
+                            <li>
+                                <input type="button" value="保存" class="btn" onclick="updateUser()">
+                            </li>
+                        </ul>
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="foot">
+            <div class="content">
+                <span>copyright c 2020蜀ICP备20000号|壹库有限公司.</span>
+                <span>侵犯版权，违者必究</span>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="/static/js/jquery-3.3.1.min.js"></script>
+<script src="/static/js/myInfo.js"></script>
+</html>

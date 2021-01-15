@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/reset.css">
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="/static/css/font_2286611_l5okx09qcz/iconfont.css">
+    
+    <title>壹库商城</title>
+</head>
+
+<body>
+    <div class="wrap">
+            <ul class="kefu">
+            <li class="chat" onclick='toChat("{{user}}")'>
+                <img src="/static/img/kefu.png" alt="" width="65px">
+                <span>客服沟通</span>
+            </li>
+            <li>
+                <img src="/static/img/weChat.jpg" alt="" width="65px">
+                <span>微信号：yikuserver</span>
+            </li>
+            <li>
+                <img src="/static/img/phone.png" alt="" width="65px">
+                <span>联系方式：8515-0199</span>
+            </li>
+        </ul>
+        <div class="header">
+            <div class="content">
+                {% if user == None %}
+                <span class="hiuser">您好，欢迎来到壹库商城</span>
+
+                <ul class="pilot">
+                    <li><span class="a"></span><span onclick="registPage()">注册</span><span>|</span></li>
+                    <li><span class="a"></span><span onclick="doLogin()">普通会员登录</span><span>|</span></li>
+                    <li><span class="a"></span><span onclick="doAdminLoginPage()">后台人员登录</span></li>
+                </ul>
+                {% else %}
+                <span class="hiuser">您好，{{user.uname}}，这里是壹库商城</span>
+
+                <ul class="pilot">
+                    <li><span class="a"><span
+                                class="iconfont icon-huiyuan"></span><span onclick="toService()">会员中心</span></span><span>|</span>
+                    </li>
+                    <li><span class="a"><span class="iconfont icon-tuichu1"></span><span onclick="doExit()">退出</span>|&nbsp;&nbsp;</span></li>
+                    <li><span class="a"></span><span onclick="doAdminLoginPage()">后台人员登录</span></li>
+                </ul>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="orderTitle">
+            <li class="content">
+                <div class="logopart">
+                    <img src="/static/img/shoplogo1.jpg" alt="">
+                </div>
+                <ul class="searchArea">
+                    <li class="search">
+                    <div class="search-box">
+                            <input id="pro" class="text" type="text" name="" placeholder="输入商品名"/>
+                        <a class="btn" href="#">
+                            <span class="icon iconfont icon-sousuo"  onclick="doSearch()"></span>
+                        </a>
+                    </div>
+                        </li>
+{#                    <li class="search">#}
+{#                        <input type="text" placeholder="请输入搜索内容" id="pro">#}
+{#                        <span class="icon iconfont icon-sousuo"  onclick="doSearch()"></span>#}
+{#                    </li>#}
+                    <li class="cart">
+                        <div>
+                            <span>我的购物车</span>
+                        </div>
+                        <span class="icon iconfont icon-gouwuche1" onclick='toCart("{{user}}")'></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="navItem">
+            <div class="content">
+                <ul class="navTitle">
+                    <li class="active"><span>首页</span></li>
+                    <li><span>产品中心</span></li>
+                    <li><span>数码类</span></li>
+                    <li><span>五金类</span></li>
+                    <li><span>护肤品类</span></li>
+                </ul>
+
+            </div> 
+            <!-- <div class="container"> -->
+            <ul class="banner " id="lists" >
+                <li class="item active">
+                    <img src="/static/img/banner2.jpg" alt="">
+                </li>
+                <li class="item">
+                    <img src="/static/img/banner3.jpg" alt="">
+                </li>
+                <li class="item">
+                    <img src="/static/img/banner4.jpg" alt="">
+                </li>
+                <li class="item">
+                    <img src="/static/img/banner1.jpg" alt="">
+                </li>
+                <li class="item">
+                    <img src="/static/img/banner5.jpg" alt="">
+                </li>
+                
+            </ul>
+            <ul class="page" id="tabs">
+                <li class="point active" data-index = '0'></li>
+                <li class="point" data-index = '1'></li>
+                <li class="point" data-index = '2'></li>
+                <li class="point" data-index = '3'></li>
+                <li class="point" data-index = '4'></li>
+            </ul>
+        <!-- </div> -->
+
+            <div class="itemContent">
+                <div class="content">
+                    <span class="proType">全部</span>
+                    <div class="line"></div>
+                    <div class="proInfo">
+
+                        <ul class="row" id="table">
+                            <li class="itempro">
+                                <img src="/static/img/leneovo1.jpg" alt="">
+                                <div class="saleInfo">
+                                    <span class="saleNum">销量：5</span>
+                                    <span class="salePrice">4999.0</span>
+                                </div>
+                                <span class="name">联想(lenovo)小新Air15</span>
+                            </li>
+                            <li class="itempro">
+                                <img src="/static/img/leneovo1.jpg" alt="">
+                                <div class="saleInfo">
+                                    <span class="saleNum">销量：5</span>
+                                    <span class="salePrice">4999.0</span>
+                                </div>
+                                <span class="name">联想(lenovo)小新Air15</span>
+                            </li>
+                            <li class="itempro">
+                                <img src="/static/img/leneovo1.jpg" alt="">
+                                <div class="saleInfo">
+                                    <span class="saleNum">销量：5</span>
+                                    <span class="salePrice">4999.0</span>
+                                </div>
+                                <span class="name">联想(lenovo)小新Air15</span>
+                            </li>
+                            <li class="itempro">
+                                <img src="/static/img/leneovo1.jpg" alt="">
+                                <div class="saleInfo">
+                                    <span class="saleNum">销量：5</span>
+                                    <span class="salePrice">4999.0</span>
+                                </div>
+                                <span class="name">联想(lenovo)小新Air15</span>
+                            </li>                            <li class="itempro">
+                                <img src="/static/img/leneovo1.jpg" alt="">
+                                <div class="saleInfo">
+                                    <span class="saleNum">销量：5</span>
+                                    <span class="salePrice">4999.0</span>
+                                </div>
+                                <span class="name">联想(lenovo)小新Air15</span>
+                            </li>
+                            <li class="itempro">
+                                <img src="/static/img/leneovo1.jpg" alt="">
+                                <div class="saleInfo">
+                                    <span class="saleNum">销量：5</span>
+                                    <span class="salePrice">4999.0</span>
+                                </div>
+                                <span class="name">联想(lenovo)小新Air15</span>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="pageCtrl">
+{#                        <input type="button" value="1" class="num active">#}
+{#                        <input type="button" value="2" class="num">#}
+{#                        <input type="button" value="下一页" class="next">#}
+{#                        <input type="text" class="a">#}
+{#                        <input type="button" value="GO" class="go">#}
+
+                        <input type="button" value="上一页" class="next" onclick="doPre()">
+                        <span id="pageNum">0<span>/</span>0</span>
+                        <input type="button" value="下一页" class="next" onclick="doNext()">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="foot">
+            <div class="content">
+                <span>copyright c 2020蜀ICP备20000号|壹库有限公司.</span>
+                <span>侵犯版权，违者必究</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="/static/js/jquery-3.3.1.min.js"></script>
+<script src="/static/js/index.js"></script>
+</html>

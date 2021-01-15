@@ -1,0 +1,199 @@
+.wrap{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.header{
+    width: 100%;
+    height: 30px;
+    color: #fff;
+    font-size: 13px;
+    background-color: rgb(101, 101, 233);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.header >.pilot{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+}
+.header >.hiuser{
+    margin-left: 50px;
+}
+.header >.pilot{
+    margin-right: 40px;
+}
+.header >.pilot li span{
+    font-size: 13px;
+    margin: 0 10px;
+}
+
+.orderTitle{
+    width: 100%;
+    height: 70px;
+    border-bottom: 2px solid rgb(62, 62, 255);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.orderTitle .logopart{
+    width: 240px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+.orderTitle .logopart>.line{
+    line-height: 60px;
+    height: 40px;
+    width: 1px;
+    background-color: rgb(204, 203, 199);
+}
+.orderTitle .logopart >.vipor{
+    color: rgb(133, 132, 131);
+    font-size: 20px;
+}
+.orderTitle >.orderpilot{
+    width: 620px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin-right: 60px;
+    margin-top: 14px;
+
+}
+.orderTitle >.orderpilot li span{
+    font-size: 15px;
+    color: rgb(66, 66, 65);
+    margin: 0 3px;
+}
+.orderTitle >.orderpilot .active{
+    color: rgb(117, 117, 248);
+}
+.active{
+    color: rgb(117, 117, 248);
+}
+
+.nav{
+    width: 100%;
+    /* height: 453px; */
+    height: 100%;
+    padding: 25px 0;
+    background-color: #eeeeee;
+}
+.nav>.content{
+    width: 1160px;
+    height: 403px;
+    margin: 0 auto;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav>.content>.lfitem{
+    width: 240px;
+    height: 403px;
+    background-color: #fff;
+}
+.nav>.content>.lfitem ul li{
+    height: 43px;
+    width: 230px;
+    line-height: 43px;
+    padding-left: 10px;
+    border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+.nav>.content>.riitem .baseInfo{
+    height: 43px;
+    line-height: 43px;
+    padding-left: 13px;
+    border-bottom: 1px solid rgb(201, 201, 201);
+} 
+
+.nav>.content>.riitem{
+    width: 890px;
+    height: 403px;
+    background-color: #fff;
+}
+
+.nav>.content .myInfo{
+    width: 330px;
+    height: 320px;
+    margin: 37px 10px 20px 80px;
+    font-size: 14px;
+
+}
+.nav>.content .myInfo>ul{
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.nav>.content .myInfo>ul .ins{
+    text-align: right;
+    /* padding-left: 0; */
+    
+}
+.nav>.content .star{
+    color: red;
+    line-height: 22px;
+}
+.nav>.content .myInfo>ul .ins>input{
+    width: 180px;
+    height: 22px;
+    line-height: 22px;
+    border: 1px solid rgb(189, 189, 189);
+}
+.sex{
+    padding-left: 88px;
+}
+.nav>.content .myInfo .btn{
+    width: 56px;
+    height: 28px;
+    /* padding-left: 92px; */
+    margin-left: 136px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: lightblue;
+    color: #fff;
+    background-color: rgb(82, 150, 167);
+}
+
+.foot{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(53, 53, 53);
+}
+.foot>.content{
+    width: 800px;
+    height: 40px;
+    font-size: 12px;
+    margin: 0 auto;
+    color: #fff;
+    padding-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}

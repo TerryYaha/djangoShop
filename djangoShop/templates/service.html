@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/reset.css">
+    <link rel="stylesheet" href="/static/css/service.css">
+    <link rel="stylesheet" href="/static/css/font_2286611_l5okx09qcz/iconfont.css">
+    <title>会员中心</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <span class="hiuser">您好，{{user.uname}}，壹库商城</span>
+
+            <ul class="pilot">
+                <li><span class="iconfont icon-shouye1" onclick="toIndex()">首页</span><span>|</span></li>
+                <li><span class="iconfont icon-gouwuche" onclick="toCart()">购物车</span><span>|</span></li>
+                <li><span class="iconfont icon-tuichu1" onclick="doExit()">退出</span></li>
+            </ul>
+        </div>
+        <div class="orderTitle">
+            <div class="logopart">
+                <img src="/static/img/shoplogo1.jpg" alt="" style="width: 120px;">
+                <div class="line"></div>
+                <span class="vipor">会员中心</span>
+            </div>
+            <ul class="orderpilot">
+                <li><span class="iconfont icon-shouye active"></span><span class="active">会员中心</span></li>
+                <li onclick="myInfo()"><span class="iconfont icon-huiyuan"></span><span>会员信息</span></li>
+                <li><span class="iconfont icon-youhuiquan"></span><span>我的优惠券</span></li>
+                <li><span class="iconfont icon-shouhuodizhi"></span><span>收获地址</span></li>
+                <li><span class="iconfont icon-shoucang"></span><span>我的收藏</span></li>
+                <li onclick="toOrder()"><span class="iconfont icon-dingdan"></span><span>我的订单</span></li>
+            </ul>
+        </div>
+
+        <div class="itemInfo">
+            <div class="user">
+                <div class="userInfo">
+                    <img src="/static/img/user.jpg" alt="" style="width: 90px;border-radius: 50%;">
+                    <ul>
+                        <li class="uptext">
+                            <span class="gc">hello</span>&nbsp;&nbsp;
+                            <span class="gr">普通会员</span>
+                        </li>
+                        <li class="downtext">
+                            <span class="gr">优惠券</span><span class="nums">0</span>&nbsp;&nbsp;
+                            <span class="gr">我的收藏</span><span class="nums">0</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="msg">
+                    <div class="line"></div>
+                    <div class="con">
+                        <span class="gc">我的消息<span class="nums">0</span></span>
+                        <span class="gc money">我的钱包<span class="mnum" id="mnum">0元</span></span>
+                        <input type="button" value="充值" class="cz" onclick="showInvestMoneyFrame()">
+                    </div>
+                </div>
+
+            </div>
+            <div class="content">
+                <div class="itemTitle">
+                    <span>我的订单(历史订单)</span>
+                    <div class="slidLeft">
+
+                        <input type="button" value="查看所有订单" class="search">
+                    </div>
+                </div>
+                <div class="pro">
+                    <div class="proTitle">
+                        <span>商品</span>
+                        <ul class="head">
+                            <li>
+                                <span>单价</span>
+                            </li>
+                            <li>
+                                <span>数量</span>
+                            </li>
+                            <li>
+                                <span>退换货操作</span>
+                            </li>
+                            <li>
+                                <span>评价操作</span>
+                            </li>
+                            <li>
+                                <span>实付款</span>
+                            </li>
+                            <li>
+                                <span>物流信息</span>
+                            </li>
+                            <li>
+                                <span>操作</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="itemInfo">
+                        <div class="container">
+                            <div class="orderNum">
+                                <span>订单号：<span class="num">12312311</span></span>
+                                <span class="time">2020-12-12&nbsp;&nbsp;12:21:21</span>
+                            </div>
+
+                            <div class="itemContent">
+                                <div class="item">
+                                    <div class="proimg">
+                                        <img src="/static/img/macbook1.jpg" alt="">
+                                        <div class="text">
+                                            <span class="name">Apple MacBook Air 13.3 新款八核M1芯片</span>
+                                            <span class="def">默认</span>
+                                            <span class="def">选择颜色：玫瑰金600</span>
+                                        </div>
+                                    </div>
+                                    <ul class="itemAct">
+                                        <li class="lineh">
+                                            <span>7999.00</span>
+                                        </li>
+                                        <li class="lineh">
+                                            <span>1</span>
+                                        </li>
+                                        <li class="lineh def">
+                                            <span>不可退换货</span>
+                                        </li>
+                                        <li class="lineh def">
+                                            <span>不可评价</span>
+                                        </li>
+                                        <li class="lineh">
+                                            <span>7990.00</span>
+                                        </li>
+                                        <li class="lineh">
+                                            <span>未发货</span>
+                                        </li>
+                                        <li>
+                                            <ul class="act">
+                                                <li>
+                                                    <input type="button" value="订单详情">
+                                                </li>
+                                                <li class="active">
+                                                    <input type="button" value="立即支付">
+                                                </li>
+                                                <li>
+                                                    <input type="button" value="取消订单">
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <div class="orderNum">
+                                <span>订单号：<span class="num">12312311</span></span>
+                                <span class="time">2020-12-12&nbsp;&nbsp;12:21:21</span>
+                            </div>
+
+                            <div class="itemContent">
+                                <div class="item">
+                                    <div class="proimg">
+                                        <img src="/static/img/macbook1.jpg" alt="">
+                                        <div class="text">
+                                            <span class="name">Apple MacBook Air 13.3 新款八核M1芯片</span>
+                                            <span class="def">默认</span>
+                                            <span class="def">选择颜色：玫瑰金600</span>
+                                        </div>
+                                    </div>
+                                    <ul class="itemAct">
+                                        <li class="lineh">
+                                            <span>7999.00</span>
+                                        </li>
+                                        <li class="lineh">
+                                            <span>1</span>
+                                        </li>
+                                        <li class="lineh def">
+                                            <span>不可退换货</span>
+                                        </li>
+                                        <li class="lineh def">
+                                            <span>不可评价</span>
+                                        </li>
+                                        <li class="lineh">
+                                            <span>7990.00</span>
+                                        </li>
+                                        <li class="lineh">
+                                            <span>未发货</span>
+                                        </li>
+                                        <li>
+                                            <ul class="act">
+                                                <li>
+                                                    <input type="button" value="订单详情">
+                                                </li>
+                                                <li class="active">
+                                                    <input type="button" value="立即支付">
+                                                </li>
+                                                <li>
+                                                    <input type="button" value="取消订单">
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pageCtrl">
+                        <input type="button" value="上一页" class="next" onclick="doPre()">
+                        <span id="pageNum">0<span>/</span>0</span>
+                        <input type="button" value="下一页" class="next" onclick="doNext()">
+                    </div>
+                </div>
+            </div>
+            <div class="updateInfo" id="updateInfo">
+                <span>充值页面</span>
+                <span>金额(元)</span>
+                <input type="text" id="moneyNumber" oninput="value=value.replace(/[^\d]/g,'')" />
+                <div class="action">
+                    <input type="button" value="充值" onclick="doUInvestMoneyAdmin()">
+                    <input type="button" value="取消" onclick="hideUpdateFrame()">
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+        <div class="foot">
+            <div class="content">
+                <span>copyright c 2020蜀ICP备20000号|壹库有限公司.</span>
+                <span>侵犯版权，违者必究</span>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="/static/js/jquery-3.3.1.min.js"></script>
+<script src="/static/js/service.js"></script>
+
+</html>

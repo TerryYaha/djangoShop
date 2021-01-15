@@ -1,0 +1,422 @@
+.wrap{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.header{
+    width: 100%;
+    height: 30px;
+    color: #fff;
+    font-size: 13px;
+    background-color: rgb(101, 101, 233);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.header >.pilot{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+}
+.header >.hiuser{
+    margin-left: 50px;
+}
+.header >.pilot{
+    margin-right: 40px;
+}
+.header >.pilot li span{
+    font-size: 13px;
+    margin: 0 10px;
+}
+
+.orderTitle{
+    width: 100%;
+    height: 70px;
+    border-bottom: 2px solid rgb(62, 62, 255);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.orderTitle .logopart{
+    width: 240px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+.orderTitle .logopart>.line{
+    line-height: 60px;
+    height: 40px;
+    width: 1px;
+    background-color: rgb(204, 203, 199);
+}
+.orderTitle .logopart >.vipor{
+    color: rgb(133, 132, 131);
+    font-size: 20px;
+}
+.orderTitle >.orderpilot{
+    width: 620px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin-right: 60px;
+    margin-top: 14px;
+
+}
+.orderTitle >.orderpilot li span{
+    font-size: 15px;
+    color: rgb(66, 66, 65);
+    margin: 0 3px;
+}
+.orderTitle >.orderpilot .active{
+    color: rgb(117, 117, 248);
+}
+.itemInfo{
+    position: relative;
+    width: 100%;
+    padding-top: 20px;
+    background-color: rgb(230, 228, 228);
+}
+.itemInfo>.user{
+    width: 1080px;
+    height: 180px;
+    margin: 0 auto;
+    background-color: rgb(201, 198, 198);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.itemInfo>.user>.userInfo{
+    position: relative;
+    width: 260px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    right: 100px;
+}
+.itemInfo>.user>.userInfo .gr{
+    font-size: 13px;
+    color: rgb(112, 113, 114);
+}
+.itemInfo>.user .gc{
+    font-size: 13px;
+    font-weight: bold;
+}
+.itemInfo>.user .money{
+    /* display: block; */
+}
+.itemInfo>.user .nums{
+    display: inline-block;
+    width: 15px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    margin-left: 2px;
+    background-color: rgb(57, 57, 255);
+}
+.msg{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.msg .con{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.msg .line{
+    width: 1px;
+    height: 120px;
+    line-height: 180px;
+    background-color: rgb(165, 161, 161);
+    margin-right: 60px;
+}
+.msg .mnum{
+    text-align: center;
+    width: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(240, 21, 13);
+    /* background-color: rgb(144, 154, 207); */
+}
+.msg .mnum .cz{
+    position: absolute;
+    top:30px;
+}
+
+#updateInfo{
+    position: absolute;
+    width: 270px;
+    border: 1px solid rgb(61, 134, 182);;
+    display: flex;
+    top: 20%;
+    left: 40%;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.updateInfo >span:nth-child(1){
+
+    width: 100%;
+    height: 50px;
+    background-color: rgb(41, 120, 224);
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.updateInfo .action{
+    margin:20px auto;
+
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.updateInfo .action>input{
+    width: 70px;
+}
+
+
+.itemInfo>.content{
+    position: relative;
+    width: 1080px;
+    height: 760px;
+    /* height: 600px; */
+    margin: 0px auto;
+    margin-top: 30px;
+    background-color: rgb(255, 255, 255);
+    /* padding-top: 20px; */
+}
+.itemInfo>.content>.itemTitle{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 2px solid #d3d3d3;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.itemInfo>.content>.itemTitle>span{
+    padding: 20px;
+}
+.itemInfo>.content>.itemTitle ul{
+    width: 840px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.itemInfo>.content>.itemTitle .slidLeft{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.itemInfo>.content>.itemTitle ul li input,
+.itemInfo>.content>.itemTitle ul li select
+{
+    height: 22px;
+    width: 120px;
+    border: 1px solid rgb(180, 180, 180);
+}
+.itemInfo>.content>.itemTitle .search{
+    border: none;
+    width: 100px;
+    height: 29px;
+    color: #fff;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 3px;
+    background-color: rgb(96, 96, 199);
+}
+.itemInfo>.content .pageCtrl{
+    width: 300px;
+    margin: 40px auto;
+}
+.itemInfo>.content .pageCtrl input{
+    height: 34px;
+    border: none;
+    background-color: rgb(224, 224, 224);
+}
+.itemInfo>.content .pageCtrl .num{
+    width: 34px;
+}
+
+.itemInfo>.content .pageCtrl input:hover{
+    background-color: rgb(91, 148, 202);
+    color: #fff;
+    transition: all .5s;
+}
+.itemInfo>.content .pageCtrl .go{
+    background-color: rgb(91, 148, 202);
+    color: #fff;
+}
+.pro #itemInfo .container>.orderNum{
+    width: 100%;
+    height: 60px;
+    line-height: 72px;
+    font-size: 14px;
+    color: rgb(97, 97, 97);
+    border-bottom: 1px solid #eeeeee;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.pro{
+    width: 95%;
+    margin: 0 auto;
+
+}
+.pro>.proTitle{
+    height: 70px;
+
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    line-height: 90px;
+    border-bottom: 2px solid #eeeeee;
+}
+.pro>.proTitle>.head{
+    font-size: 15px;
+    font-weight: 700;
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+}
+.pro>.orderNum{
+    width: 100%;
+    height: 60px;
+    line-height: 72px;
+    font-size: 14px;
+    color: rgb(97, 97, 97);
+    border-bottom: 1px solid #eeeeee;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.itemContent>.item>.proimg>img{
+    width: 110px;
+    height: 100%;
+}
+
+.itemContent>.item{
+    padding: 0;
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 13px;
+}
+.itemContent>{
+
+}
+.itemContent>.item>ul{
+    width: 740px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.itemContent>.item>.proimg{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.itemContent>.item>.proimg>.text{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: left;
+    justify-content: space-around;
+}
+
+.itemContent>.item>.itemAct>.lineh{
+    line-height: 110px;
+}
+.itemContent>.item>.itemAct .act{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.itemContent>.item .def{
+    color:rgb(139, 139, 139);
+}
+.itemContent>.item>.itemAct .act li input{
+    border: none;
+    height: 30px;
+    line-height: 30px;
+}
+.itemContent>.item>.itemAct .active input{
+    background-color: #ff6700;
+    color: #fff;
+}
+.foot{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(53, 53, 53);
+}
+.foot>.content{
+    width: 800px;
+    height: 40px;
+    font-size: 12px;
+    margin: 0 auto;
+    color: #fff;
+    padding-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -1,0 +1,298 @@
+.wrap{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.header{
+    width: 100%;
+    height: 30px;
+    color: #fff;
+    font-size: 13px;
+    background-color: rgb(101, 101, 233);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.header >.pilot{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+}
+.header >.hiuser{
+    margin-left: 50px;
+}
+.header >.pilot{
+    margin-right: 40px;
+}
+.header >.pilot li span{
+    font-size: 13px;
+    margin: 0 10px;
+}
+
+.orderTitle{
+    width: 100%;
+    height: 70px;
+    border-bottom: 2px solid rgb(62, 62, 255);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.orderTitle .logopart{
+    width: 240px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+.orderTitle .logopart>.line{
+    line-height: 60px;
+    height: 40px;
+    width: 1px;
+    background-color: rgb(204, 203, 199);
+}
+.orderTitle .logopart >.vipor{
+    color: rgb(133, 132, 131);
+    font-size: 20px;
+}
+.orderTitle >.orderpilot{
+    width: 620px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin-right: 60px;
+    margin-top: 14px;
+
+}
+.orderTitle >.orderpilot li span{
+    font-size: 15px;
+    color: rgb(66, 66, 65);
+    margin: 0 3px;
+}
+.orderTitle >.orderpilot .active{
+    color: rgb(117, 117, 248);
+}
+.itemInfo{
+    position: relative;
+    width: 100%;
+    padding-top: 20px;
+    background-color: rgb(230, 228, 228);
+}
+.itemInfo>.content{
+    position: relative;
+    width: 1080px;
+    /*height: 600px;*/
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    /* padding-top: 20px; */
+}
+.itemInfo>.content>.itemTitle{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 2px solid #d3d3d3;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.itemInfo>.content>.itemTitle>span{
+    padding: 20px;
+}
+.itemInfo>.content>.itemTitle ul{
+    width: 840px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.itemInfo>.content>.itemTitle .slidLeft{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.itemInfo>.content>.itemTitle ul li{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+
+}
+.itemInfo>.content>.itemTitle ul li input,
+.itemInfo>.content>.itemTitle ul li select
+{
+    height: 22px;
+    width: 120px;
+    border: 1px solid rgb(180, 180, 180);
+}
+.itemInfo>.content>.itemTitle .search{
+    border: none;
+    width: 70px;
+    height: 29px;
+    color: #fff;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 3px;
+    background-color: rgb(96, 96, 199);
+}
+.pro{
+    width: 95%;
+    margin: 0 auto;
+}
+.pro>.proTitle{
+    height: 70px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    line-height: 90px;
+    border-bottom: 2px solid #eeeeee;
+}
+.pro>.proTitle>.head{
+    font-size: 15px;
+    font-weight: 700;
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+}
+.pro #itemInfo .container>.orderNum{
+    width: 100%;
+    height: 60px;
+    line-height: 72px;
+    font-size: 14px;
+    color: rgb(97, 97, 97);
+    border-bottom: 1px solid #eeeeee;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.itemContent>.item>.proimg>img{
+    width: 110px;
+    height: 100%;
+}
+
+.itemContent>.item{
+    padding: 0;
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 13px;
+}
+.itemContent>.item>ul{
+    width: 740px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.itemContent>.item>.proimg{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.itemContent>.item>.proimg>.text{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: left;
+    justify-content: space-around;
+}
+
+.itemContent>.item>.itemAct>.lineh{
+    line-height: 110px;
+}
+.itemContent>.item>.itemAct .act{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.itemContent>.item .def{
+    color:rgb(139, 139, 139);
+}
+.itemContent>.item>.itemAct .act li input{
+    border: none;
+    height: 30px;
+    line-height: 30px;
+}
+.itemContent>.item>.itemAct .active input{
+    background-color: #ff6700;
+    color: #fff;
+}
+.itemInfo>.content .pageCtrl{
+    width: 300px;
+    margin: 40px auto;
+}
+.itemInfo>.content .pageCtrl input{
+    height: 34px;
+    border: none;
+    background-color: rgb(224, 224, 224);
+}
+.itemInfo>.content .pageCtrl .num{
+    width: 34px;
+}
+.itemInfo>.content .pageCtrl .a{
+    width: 50px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid rgb(216, 216, 216);
+}
+.itemInfo>.content .pageCtrl .active{
+    background-color: rgb(91, 148, 202);
+    color: #fff;
+}
+.itemInfo>.content .pageCtrl .go{
+    background-color: rgb(91, 148, 202);
+    color: #fff;
+}
+.foot{
+    position: fixed;
+    buttom:0;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(53, 53, 53);
+}
+.foot>.content{
+    width: 800px;
+    height: 40px;
+    font-size: 12px;
+    margin: 0 auto;
+    color: #fff;
+    padding-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
